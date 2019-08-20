@@ -36,9 +36,15 @@ film3 = Film.new({
   'price' => 10
 })
 
+film4 = Film.new({
+  'title' => 'Godfather',
+  'price' => 15
+})
+
 film1.save()
 film2.save()
 film3.save()
+film4.save()
 
 
 screening1 = Screening.new({
