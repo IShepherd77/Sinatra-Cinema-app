@@ -1,0 +1,23 @@
+body {
+  background-color: black;
+}
+
+.films-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Bangers', cursive;
+  font-size: 5em;
+}
+
+ul {
+  list-style-type: none;
+  text-align: center;
+  background-color: white;
+  padding: 0.5em;
+}
+
+ul a {
+  color: black;
+}
