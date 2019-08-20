@@ -1,5 +1,5 @@
 <ul>
-  <% for title in @film_titles %>
-  <li>  <%= title %> </li>
+  <% for film in @films %>
+  <li><a href="/films/<%= film.id %>">  <%= film.title %> </a></li>
   <% end %>
 </ul>
