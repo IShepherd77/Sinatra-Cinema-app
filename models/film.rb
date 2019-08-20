@@ -59,6 +59,14 @@ class Film
     return self.customers_booked.count()
   end
 
+  def self.find(id)
+    sql = "SELECT * FROM films
+    WHERE id = $1"
+    values = [id]
+    film_data = SqlRunner.run(sql, values)
+    return map_results_to_film(film_data)
+  end
+
 end
 
 def map_results_to_film(results)
